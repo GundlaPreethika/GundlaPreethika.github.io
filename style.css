@@ -12,33 +12,20 @@ body {
 
 /* Navbar */
 nav {
-  display: flex;
-  justify-content: space-between;
   padding: 20px;
   background: #111;
-  position: sticky;
-  top: 0;
-  z-index: 100;
 }
 
-nav ul {
-  display: flex;
-  list-style: none;
+.logo {
+  font-size: 24px;
+  color: #00eaff;
+  font-weight: 600;
 }
 
-nav ul li {
-  margin-left: 20px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-/* Hero Section */
+/* Hero */
 .hero {
   text-align: center;
-  padding: 100px 20px;
+  padding: 80px 20px;
 }
 
 .highlight {
@@ -56,15 +43,31 @@ nav a {
   font-weight: 600;
 }
 
-.btn:hover {
-  opacity: 0.8;
-}
-
 /* Sections */
 .section {
-  padding: 60px 20px;
-  max-width: 1000px;
+  padding: 40px 20px;
+  max-width: 900px;
   margin: auto;
+}
+
+/* Toggle */
+.toggle {
+  cursor: pointer;
+  color: #00eaff;
+  user-select: none;
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.content {
+  display: none;
+  animation: fadeIn 0.5s ease-in-out;
+  margin-top: 10px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
 /* Skills Icons */
@@ -80,12 +83,6 @@ nav a {
   border-radius: 10px;
   text-align: center;
   border: 1px solid #333;
-  transition: 0.3s;
-}
-
-.skills-icons div:hover {
-  transform: translateY(-5px);
-  border-color: #00eaff;
 }
 
 .skills-icons i {
@@ -93,10 +90,10 @@ nav a {
   margin-bottom: 8px;
 }
 
-/* Projects */
+/* Project Grid */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 25px;
 }
 
@@ -105,13 +102,7 @@ nav a {
   padding: 18px;
   border-radius: 12px;
   border: 1px solid #333;
-  transition: 0.3s;
   text-align: center;
-}
-
-.project-card:hover {
-  transform: translateY(-10px);
-  border-color: #00eaff;
 }
 
 .project-card img {
@@ -130,19 +121,13 @@ nav a {
 
 /* Social Icons */
 .social-icons {
-  text-align: center;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .social-icons a {
-  margin: 0 12px;
+  margin: 0 10px;
   color: #00eaff;
   font-size: 32px;
-  transition: 0.3s;
-}
-
-.social-icons a:hover {
-  color: #fff;
 }
 
 /* Footer */
