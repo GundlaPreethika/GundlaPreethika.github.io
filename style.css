@@ -22,7 +22,7 @@ nav {
   font-weight: 600;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
   text-align: center;
   padding: 80px 20px;
@@ -32,6 +32,22 @@ nav {
   color: #00eaff;
 }
 
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 22px;
+  background: #00eaff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
 /* Sections */
 .section {
   padding: 40px 20px;
@@ -39,13 +55,14 @@ nav {
   margin: auto;
 }
 
-/* Toggle */
+/* Expand / Collapse Toggle */
 .toggle {
   cursor: pointer;
   color: #00eaff;
   user-select: none;
-  margin-bottom: 10px;
   font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .content {
@@ -59,7 +76,7 @@ nav {
   to { opacity: 1; }
 }
 
-/* Skills Icons */
+/* Skills Grid */
 .skills-icons {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
@@ -69,9 +86,15 @@ nav {
 .skills-icons div {
   background: #1a1a1a;
   padding: 18px;
-  border-radius: 10px;
   text-align: center;
+  border-radius: 10px;
   border: 1px solid #333;
+  transition: 0.3s;
+}
+
+.skills-icons div:hover {
+  transform: translateY(-5px);
+  border-color: #00eaff;
 }
 
 .skills-icons i {
@@ -79,7 +102,7 @@ nav {
   margin-bottom: 8px;
 }
 
-/* Project Grid (No images) */
+/* Project Grid (Without Images) */
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -92,15 +115,21 @@ nav {
   border-radius: 12px;
   border: 1px solid #333;
   text-align: center;
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  border-color: #00eaff;
 }
 
 .project-card a {
   color: #00eaff;
+  font-weight: bold;
   text-decoration: none;
-  font-weight: 600;
 }
 
-/* Social Icons */
+/* Contact Icons */
 .social-icons {
   margin-top: 10px;
 }
@@ -109,12 +138,17 @@ nav {
   margin: 0 10px;
   color: #00eaff;
   font-size: 32px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #fff;
 }
 
 /* Footer */
 footer {
+  text-align: center;
   background: #111;
   padding: 20px;
-  text-align: center;
   margin-top: 40px;
 }
