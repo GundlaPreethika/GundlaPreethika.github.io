@@ -18,6 +18,7 @@ nav {
   background: #111;
   position: sticky;
   top: 0;
+  z-index: 100;
 }
 
 nav ul {
@@ -34,7 +35,7 @@ nav a {
   text-decoration: none;
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
   text-align: center;
   padding: 100px 20px;
@@ -52,48 +53,99 @@ nav a {
   color: #000;
   text-decoration: none;
   border-radius: 5px;
+  font-weight: 600;
+}
+
+.btn:hover {
+  opacity: 0.8;
 }
 
 /* Sections */
 .section {
   padding: 60px 20px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: auto;
 }
 
-/* Skills */
-.skills-grid {
+/* Skills Icons */
+.skills-icons {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 20px;
+  gap: 25px;
 }
 
-.skills-grid span {
+.skills-icons div {
   background: #1a1a1a;
-  padding: 12px;
-  border-radius: 8px;
+  padding: 18px;
+  border-radius: 10px;
   text-align: center;
+  border: 1px solid #333;
+  transition: 0.3s;
+}
+
+.skills-icons div:hover {
+  transform: translateY(-5px);
+  border-color: #00eaff;
+}
+
+.skills-icons i {
+  font-size: 32px;
+  margin-bottom: 8px;
 }
 
 /* Projects */
 .project-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
 }
 
 .project-card {
   background: #1a1a1a;
-  padding: 20px;
-  border-radius: 10px;
+  padding: 18px;
+  border-radius: 12px;
   border: 1px solid #333;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  border-color: #00eaff;
+}
+
+.project-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 12px;
 }
 
 .project-card a {
   color: #00eaff;
   text-decoration: none;
+  font-weight: 600;
 }
 
+/* Social Icons */
+.social-icons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 12px;
+  color: #00eaff;
+  font-size: 32px;
+  transition: 0.3s;
+}
+
+.social-icons a:hover {
+  color: #fff;
+}
+
+/* Footer */
 footer {
   background: #111;
   padding: 20px;
